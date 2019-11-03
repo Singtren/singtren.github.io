@@ -96,25 +96,18 @@
 
 
 
-  <meta name="description" content="半群：封闭性，结合律 monoid(幺半群):半群含单位元 循环群a group of order n is cyclic ifand only if it contains an element of order n. if p is prime, thegroup $((\mathbb{Z}/p\mathbb{Z})^*,\cdot )$ is cyclic. $\mathrm{Aut}(\m">
-<meta name="keywords" content="群论 ，笔记">
+  <meta name="description" content="关于群元素的阶的猜想在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤. $a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$ 如果它是正确的，那么似乎能给出元素能开$n$次方的条件。">
+<meta name="keywords" content="GPA,有限群">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Basic of Group Theory">
-<meta property="og:url" content="http://106.14.2.132/2019/11/02/Basic of Group Theory/index.html">
+<meta property="og:title" content="On the Order Of Elements of  Group">
+<meta property="og:url" content="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/index.html">
 <meta property="og:site_name" content="Sinren">
-<meta property="og:description" content="半群：封闭性，结合律 monoid(幺半群):半群含单位元 循环群a group of order n is cyclic ifand only if it contains an element of order n. if p is prime, thegroup $((\mathbb{Z}/p\mathbb{Z})^*,\cdot )$ is cyclic. $\mathrm{Aut}(\m">
+<meta property="og:description" content="关于群元素的阶的猜想在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤. $a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$ 如果它是正确的，那么似乎能给出元素能开$n$次方的条件。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://106.14.2.132/images/2019-09-08-11-58-29.png">
-<meta property="og:image" content="http://106.14.2.132/images/2019-09-08-11-55-29.png">
-<meta property="og:image" content="http://106.14.2.132/images/2019-09-15-22-35-54.png">
-<meta property="og:image" content="http://106.14.2.132/images/2019-09-16-11-27-38.png">
-<meta property="og:image" content="http://106.14.2.132/images/2019-09-12-18-17-54.png">
-<meta property="og:image" content="http://106.14.2.132/images/2019-09-15-22-55-43.png">
-<meta property="og:updated_time" content="2019-11-02T09:10:54.212Z">
+<meta property="og:updated_time" content="2019-11-03T14:58:18.480Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Basic of Group Theory">
-<meta name="twitter:description" content="半群：封闭性，结合律 monoid(幺半群):半群含单位元 循环群a group of order n is cyclic ifand only if it contains an element of order n. if p is prime, thegroup $((\mathbb{Z}/p\mathbb{Z})^*,\cdot )$ is cyclic. $\mathrm{Aut}(\m">
-<meta name="twitter:image" content="http://106.14.2.132/images/2019-09-08-11-58-29.png">
+<meta name="twitter:title" content="On the Order Of Elements of  Group">
+<meta name="twitter:description" content="关于群元素的阶的猜想在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤. $a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$ 如果它是正确的，那么似乎能给出元素能开$n$次方的条件。">
 
 
 
@@ -122,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://106.14.2.132/2019/11/02/Basic of Group Theory/">
+  <link rel="canonical" href="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/">
 
 
 
@@ -132,7 +125,7 @@
   };
 </script>
 
-  <title>Basic of Group Theory | Sinren</title>
+  <title>On the Order Of Elements of  Group | Sinren</title>
   
 
 
@@ -352,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://106.14.2.132/2019/11/02/Basic of Group Theory/">
+    <link itemprop="mainEntityOfPage" href="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sinren">
@@ -369,7 +362,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Basic of Group Theory
+          <h1 class="post-title" itemprop="name headline">On the Order Of Elements of  Group
 
               
             
@@ -395,7 +388,7 @@
                 
               
 
-              <time title="创建时间：2019-11-02 00:00:00 / 修改时间：17:10:54" itemprop="dateCreated datePublished" datetime="2019-11-02T00:00:00+08:00">2019-11-02</time>
+              <time title="创建时间：2019-11-03 00:00:00 / 修改时间：22:58:18" itemprop="dateCreated datePublished" datetime="2019-11-03T00:00:00+08:00">2019-11-03</time>
             
 
             
@@ -443,8 +436,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/11/02/Basic of Group Theory/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/02/Basic of Group Theory/" itemprop="commentCount"></span>
+                <a href="/2019/11/03/On the Order Of Elements of  Group/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/03/On the Order Of Elements of  Group/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -479,29 +472,72 @@
       
 
       
-        <p><code>半群</code>：封闭性，结合律</p>
-<p><code>monoid(幺半群)</code>:半群含单位元</p>
-<h1 id="循环群"><a href="#循环群" class="headerlink" title="循环群"></a>循环群</h1><p>a group of order n is cyclic if<br>and only if it contains an element of order n.</p>
-<p>if p is prime, the<br>group $((\mathbb{Z}/p\mathbb{Z})^*,\cdot )$ is cyclic.</p>
-<p>$\mathrm{Aut}(\mathbb{Z}/n\mathbb{Z})\cong ((\mathbb{Z}/n\mathbb{Z})^*,\cdot )$</p>
-<p>The group $(\mathbb{Z}/n\mathbb{Z})^\times$ is cyclic if and only if n is $1,2,4,p^k,2p^k$ , where p is an odd prime and k &gt; 0</p>
-<p><a href="https://en.wikipedia.org/wiki/Multiplicative_group_of_integers_modulo_n" target="_blank" rel="noopener">Multiplicative group of integers modulo n</a>;</p>
+        <h1 id="关于群元素的阶的猜想"><a href="#关于群元素的阶的猜想" class="headerlink" title="关于群元素的阶的猜想"></a>关于群元素的阶的猜想</h1><p>在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤.</p>
+<p>$a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$</p>
+<p>如果它是正确的，那么似乎能给出元素能开$n$次方的条件。</p>
 <a id="more"></a>
-<h1 id="群同态"><a href="#群同态" class="headerlink" title="群同态"></a>群同态</h1><p>Let ϕ : G → H be a group homomorphism, and let g ∈ G be an<br>element of finite order. Then |ϕ(g)| divides |g|.</p>
-<h1 id="群同构"><a href="#群同构" class="headerlink" title="群同构"></a>群同构</h1><p><img src="/images/2019-09-08-11-58-29.png" alt>;</p>
-<p><img src="/images/2019-09-08-11-55-29.png" alt></p>
-<p><a href="http://oeis.org/wiki/Number_of_groups_of_order_n" target="_blank" rel="noopener">Number of groups of order n</a></p>
-<h1 id="子群"><a href="#子群" class="headerlink" title="子群"></a>子群</h1><p>子群的像，原像是子群</p>
-<p>$\mathrm{ker},\mathrm{im}$是子群</p>
-<script type="math/tex; mode=display">N\le Z(G)\Rightarrow N\unlhd  G</script><p>$A\le C\Rightarrow AB\cap C=A(B\cap C)$</p>
-<script type="math/tex; mode=display">\{kH|k\in K\}=\frac{KH}{H}</script><h2 id="单群"><a href="#单群" class="headerlink" title="单群"></a>单群</h2><p><a href="https://dzone.com/articles/orders-of-finite-simple-groups" target="_blank" rel="noopener">order of finite simple groups</a></p>
-<p><a href="https://en.wikipedia.org/wiki/List_of_finite_simple_groups" target="_blank" rel="noopener">List_of_finite_simple_group</a></p>
-<h1 id="Lagerange’s-theorem"><a href="#Lagerange’s-theorem" class="headerlink" title="Lagerange’s theorem"></a>Lagerange’s theorem</h1><p>The order |g| of any element g of a finite group G is a divisor of<br>|G|</p>
-<p> If |G| is a prime integer p, then necessarily $G\cong \mathbb{Z}/n\mathbb{Z}$</p>
-<p><img src="/images/2019-09-15-22-35-54.png" alt></p>
-<p><img src="/images/2019-09-16-11-27-38.png" alt></p>
-<h1 id="群构造"><a href="#群构造" class="headerlink" title="群构造"></a>群构造</h1><h2 id="semidirect-product"><a href="#semidirect-product" class="headerlink" title="semidirect product"></a>semidirect product</h2><p> <img src="/images/2019-09-12-18-17-54.png" alt></p>
-<h1 id="The-conjugation-action"><a href="#The-conjugation-action" class="headerlink" title="The conjugation action"></a>The conjugation action</h1><p> <img src="/images/2019-09-15-22-55-43.png" alt></p>
+<p>我们有以下两个猜想:</p>
+<blockquote>
+<h3 id="猜想1"><a href="#猜想1" class="headerlink" title="猜想1"></a>猜想1</h3><p>$G$是有限群，若$(|G|,n)=1$,则 $f:G\rightarrow G,x\mapsto x^n$是$G$的双射，即对于任意$a\in G$,存在$b\in G$,使得，$b^n=a$</p>
+<h3 id="猜想2"><a href="#猜想2" class="headerlink" title="猜想2"></a>猜想2</h3><p>$G$是有限群，$a\in G,(|a|,n)=1$,则存在$b\in G$,使得，$b^n=a$</p>
+</blockquote>
+<p>对于猜想1，当$G$是交换群，证明是很容易的,且$f$是$G$的同构:</p>
+<p>设$A$是有限交换群，$(|A|,n)=1$,设$a,b\in A,a^n=b^n$,则$a^n=b^n\Rightarrow (ab^{-1})^n=1$,所以$|ab^{-1}| |n$，而$(|ab^{-1}| ,n)=1$,故$ab^{-1}=1$,即$a=b$,所以映射$x\mapsto x^n$是单射，又因$|A|$有限，所以该映射是双射</p>
+<p>对于非交换群，下面用GAP软件做一些验证</p>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D6:=DihedralGroup(6);</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;group of size 6 with 2 generators&gt;
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AsList(D6);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, f2, f1*f2, f2^2, f1*f2^2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(D6,x-&gt;Order(x));#计算各元素阶</span><br></pre></td></tr></table></figure>
+<pre><code>[ 1, 2, 3, 2, 3, 2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#取n=3,(2,n)=1,做映射x-&gt;x^3后，应该有元素f1,f1*f2,f1*f2^2</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(D6,x-&gt;x^3);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, &lt;identity&gt; of ..., f1*f2, &lt;identity&gt; of ..., f1*f2^2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#取 n=5,x-&gt;x^n应该是双射</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(D6,x-&gt;x^5);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, f2^2, f1*f2, f2, f1*f2^2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#对于D6，结论似乎是正确的</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">G:= SmallGroup(12,3);</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;group of size 12 with 3 generators&gt;
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StructureDescription(G);</span><br></pre></td></tr></table></figure>
+<pre><code>&quot;A4&quot;
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AsList(G);#12阶群A4</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f1^2, f1*f2, f1*f3, f2*f3, f1^2*f2, f1^2*f3, f1*f2*f3, f1^2*f2*f3 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^13);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f1^2, f1*f2, f1*f3, f2*f3, f1^2*f2, f1^2*f3, f1*f2*f3, f1^2*f2*f3 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^7);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f1^2, f1*f2, f1*f3, f2*f3, f1^2*f2, f1^2*f3, f1*f2*f3, f1^2*f2*f3 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^5);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1^2, f2, f3, f1, f1^2*f2*f3, f1^2*f2, f2*f3, f1*f3, f1*f2*f3, f1^2*f3, f1*f2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^6);# 6|12</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ... ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^8); #(8,12)=4</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1^2, &lt;identity&gt; of ..., &lt;identity&gt; of ..., f1, f1^2*f2*f3, f1^2*f2, &lt;identity&gt; of ..., f1*f3, f1*f2*f3, f1^2*f3, f1*f2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^11);</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1^2, f2, f3, f1, f1^2*f2*f3, f1^2*f2, f2*f3, f1*f3, f1*f2*f3, f1^2*f3, f1*f2 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">G1:= SmallGroup(60,2);</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;group of size 60 with 4 generators&gt;
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IsAbelian(G1);</span><br></pre></td></tr></table></figure>
+<pre><code>false
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#取 n=7</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s1:=Set(List(G1,x-&gt;x^7));</span><br></pre></td></tr></table></figure>
+<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f4, f1*f2, f1*f3, f1*f4, f2^2, f2*f3, f2*f4, f3*f4, f4^2, f1*f2^2, f1*f2*f3, f1*f2*f4, f1*f3*f4, f1*f4^2, f2^2*f3, f2^2*f4, f2*f3*f4, f2*f4^2, f3*f4^2, f4^3, f1*f2^2*f3, f1*f2^2*f4, f1*f2*f3*f4, f1*f2*f4^2, f1*f3*f4^2, f1*f4^3, f2^2*f3*f4, f2^2*f4^2, f2*f3*f4^2, f2*f4^3, f3*f4^3, f4^4, f1*f2^2*f3*f4, f1*f2^2*f4^2, f1*f2*f3*f4^2, f1*f2*f4^3, f1*f3*f4^3, f1*f4^4, f2^2*f3*f4^2, f2^2*f4^3, f2*f3*f4^3, f2*f4^4, f3*f4^4, f1*f2^2*f3*f4^2, f1*f2^2*f4^3, f1*f2*f3*f4^3, f1*f2*f4^4, f1*f3*f4^4, f2^2*f3*f4^3, f2^2*f4^4, f2*f3*f4^4, f1*f2^2*f3*f4^3, f1*f2^2*f4^4, f1*f2*f3*f4^4, f2^2*f3*f4^4, f1*f2^2*f3*f4^4 ]
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s2:=Set(G1);;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s1=s2;</span><br></pre></td></tr></table></figure>
+<pre><code>true
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a5:=AsList(G1)[5];</span><br></pre></td></tr></table></figure>
+<pre><code>&lt;object&gt;
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Order(a5);</span><br></pre></td></tr></table></figure>
+<pre><code>5
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 取n=6,一定存在元素，它的n次幂等于a5</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a5 in List(G1,x-&gt;x^6);</span><br></pre></td></tr></table></figure>
+<pre><code>true
+</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>又稍微思考了以下，发现只需考虑循环群就足够了。</p>
+<p>对于猜想2，证明如下:</p>
+<p>设$|a|=m$,$\langle a\rangle$是$m$阶循环群，$(m,n)=1$,则因$\langle a\rangle$是交换群，故$x\mapsto x^n$是$\langle a\rangle$的同构，所以存在$b\in \langle a\rangle\subseteq G$,使得$b^n=a$</p>
+<p>对于猜想1，利用猜想2可证明。</p>
+<p>$(|G|,n)=1$,所以$n$与所以$G$中元素的阶互质，所以对于任意$a\in G$,存在$b \in G$,使得$b^n=a$,所以映射$x\mapsto x^n$是$G$到$G$的满射，又因为$|G|$有限，所以这个映射是双射。</p>
 
       
     </div>
@@ -525,7 +561,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/群论-，笔记/" rel="tag"># 群论 ，笔记</a>
+            <a href="/tags/GPA-有限群/" rel="tag"># GPA,有限群</a>
           
         </div>
       
@@ -538,8 +574,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/02/gap Notes/" rel="next" title="gap Notes">
-                <i class="fa fa-chevron-left"></i> gap Notes
+              <a href="/2019/11/02/Basic of Group Theory/" rel="next" title="Basic of Group Theory">
+                <i class="fa fa-chevron-left"></i> Basic of Group Theory
               </a>
             
           </div>
@@ -547,10 +583,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/11/03/On the Order Of Elements of  Group/" rel="prev" title="On the Order Of Elements of  Group">
-                On the Order Of Elements of  Group <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -720,7 +752,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#循环群"><span class="nav-number">1.</span> <span class="nav-text">循环群</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#群同态"><span class="nav-number">2.</span> <span class="nav-text">群同态</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#群同构"><span class="nav-number">3.</span> <span class="nav-text">群同构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#子群"><span class="nav-number">4.</span> <span class="nav-text">子群</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#单群"><span class="nav-number">4.1.</span> <span class="nav-text">单群</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Lagerange’s-theorem"><span class="nav-number">5.</span> <span class="nav-text">Lagerange’s theorem</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#群构造"><span class="nav-number">6.</span> <span class="nav-text">群构造</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#semidirect-product"><span class="nav-number">6.1.</span> <span class="nav-text">semidirect product</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#The-conjugation-action"><span class="nav-number">7.</span> <span class="nav-text">The conjugation action</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于群元素的阶的猜想"><span class="nav-number">1.</span> <span class="nav-text">关于群元素的阶的猜想</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#猜想1"><span class="nav-number">1.0.1.</span> <span class="nav-text">猜想1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#猜想2"><span class="nav-number">1.0.2.</span> <span class="nav-text">猜想2</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -906,9 +938,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://106.14.2.132/2019/11/02/Basic of Group Theory/";
-    this.page.identifier = "2019/11/02/Basic of Group Theory/";
-    this.page.title = 'Basic of Group Theory';
+    this.page.url = "http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/";
+    this.page.identifier = "2019/11/03/On the Order Of Elements of  Group/";
+    this.page.title = 'On the Order Of Elements of  Group';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
