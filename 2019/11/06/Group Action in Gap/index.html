@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="关于群元素的阶的猜想在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤. $a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$ 如果它是正确的，那么似乎能给出元素能开$n$次方的条件。">
-<meta name="keywords" content="GPA,有限群">
+  <meta name="description" content="Group Action in GAPGroup ActionGAP 中的群作用是右作用。 设$\mu: \Omega\times G\longrightarrow\Omega$ 是$G$在集合$\Omega$上的作用，则$\mu$满足$\mu(x,gh)=\mu(\mu(x,g),h)$ Basic Action在GAP中，群作用$\mu$可以通过定义函数u(omega,g)来构造，GAP本身已">
+<meta name="keywords" content="GAP,群作用">
 <meta property="og:type" content="article">
-<meta property="og:title" content="On the Order Of Elements of  Group">
-<meta property="og:url" content="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/index.html">
+<meta property="og:title" content="Group Action in Gap">
+<meta property="og:url" content="http://106.14.2.132/2019/11/06/Group Action in Gap/index.html">
 <meta property="og:site_name" content="Sinren">
-<meta property="og:description" content="关于群元素的阶的猜想在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤. $a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$ 如果它是正确的，那么似乎能给出元素能开$n$次方的条件。">
+<meta property="og:description" content="Group Action in GAPGroup ActionGAP 中的群作用是右作用。 设$\mu: \Omega\times G\longrightarrow\Omega$ 是$G$在集合$\Omega$上的作用，则$\mu$满足$\mu(x,gh)=\mu(\mu(x,g),h)$ Basic Action在GAP中，群作用$\mu$可以通过定义函数u(omega,g)来构造，GAP本身已">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-04T12:49:46.491Z">
+<meta property="og:updated_time" content="2019-11-05T16:50:11.170Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="On the Order Of Elements of  Group">
-<meta name="twitter:description" content="关于群元素的阶的猜想在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤. $a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$ 如果它是正确的，那么似乎能给出元素能开$n$次方的条件。">
+<meta name="twitter:title" content="Group Action in Gap">
+<meta name="twitter:description" content="Group Action in GAPGroup ActionGAP 中的群作用是右作用。 设$\mu: \Omega\times G\longrightarrow\Omega$ 是$G$在集合$\Omega$上的作用，则$\mu$满足$\mu(x,gh)=\mu(\mu(x,g),h)$ Basic Action在GAP中，群作用$\mu$可以通过定义函数u(omega,g)来构造，GAP本身已">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/">
+  <link rel="canonical" href="http://106.14.2.132/2019/11/06/Group Action in Gap/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>On the Order Of Elements of  Group | Sinren</title>
+  <title>Group Action in Gap | Sinren</title>
   
 
 
@@ -345,7 +345,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/">
+    <link itemprop="mainEntityOfPage" href="http://106.14.2.132/2019/11/06/Group Action in Gap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sinren">
@@ -362,7 +362,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">On the Order Of Elements of  Group
+          <h1 class="post-title" itemprop="name headline">Group Action in Gap
 
               
             
@@ -388,24 +388,12 @@
                 
               
 
-              <time title="创建时间：2019-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-03T00:00:00+08:00">2019-11-03</time>
+              <time title="创建时间：2019-11-06 00:47:27 / 修改时间：00:50:11" itemprop="dateCreated datePublished" datetime="2019-11-06T00:47:27+08:00">2019-11-06</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-11-04 20:49:46" itemprop="dateModified" datetime="2019-11-04T20:49:46+08:00">2019-11-04</time>
               
             
           </span>
@@ -421,6 +409,13 @@
               
                 <span class="post-meta-item-text">分类于</span>
               
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/GAP/" itemprop="url" rel="index"><span itemprop="name">GAP</span></a></span>
+
+                
+                
+                  ，
+                
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/抽象代数/" itemprop="url" rel="index"><span itemprop="name">抽象代数</span></a></span>
 
@@ -448,8 +443,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/11/03/On the Order Of Elements of  Group/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/03/On the Order Of Elements of  Group/" itemprop="commentCount"></span>
+                <a href="/2019/11/06/Group Action in Gap/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/06/Group Action in Gap/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -484,72 +479,26 @@
       
 
       
-        <h1 id="关于群元素的阶的猜想"><a href="#关于群元素的阶的猜想" class="headerlink" title="关于群元素的阶的猜想"></a>关于群元素的阶的猜想</h1><p>在看Schur-Zassenhaus 定理证明的时候，发现了一个不太理解的步骤.</p>
-<p>$a$是群$G$的元素，且$(|a|,n)=1$,则存在$b\in G$，使得，$b^n=a$</p>
-<p>如果它是正确的，那么似乎能给出元素能开$n$次方的条件。</p>
-<a id="more"></a>
-<p>我们有以下两个猜想:</p>
-<blockquote>
-<h3 id="猜想1"><a href="#猜想1" class="headerlink" title="猜想1"></a>猜想1</h3><p>$G$是有限群，若$(|G|,n)=1$,则 $f:G\rightarrow G,x\mapsto x^n$是$G$的双射，即对于任意$a\in G$,存在$b\in G$,使得，$b^n=a$</p>
-<h3 id="猜想2"><a href="#猜想2" class="headerlink" title="猜想2"></a>猜想2</h3><p>$G$是有限群，$a\in G,(|a|,n)=1$,则存在$b\in G$,使得，$b^n=a$</p>
-</blockquote>
-<p>对于猜想1，当$G$是交换群，证明是很容易的,且$f$是$G$的同构:</p>
-<p>设$A$是有限交换群，$(|A|,n)=1$,设$a,b\in A,a^n=b^n$,则$a^n=b^n\Rightarrow (ab^{-1})^n=1$,所以$|ab^{-1}| |n$，而$(|ab^{-1}| ,n)=1$,故$ab^{-1}=1$,即$a=b$,所以映射$x\mapsto x^n$是单射，又因$|A|$有限，所以该映射是双射</p>
-<p>对于非交换群，下面用GAP软件做一些验证</p>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D6:=DihedralGroup(6);</span><br></pre></td></tr></table></figure>
-<pre><code>&lt;group of size 6 with 2 generators&gt;
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AsList(D6);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, f2, f1*f2, f2^2, f1*f2^2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(D6,x-&gt;Order(x));#计算各元素阶</span><br></pre></td></tr></table></figure>
-<pre><code>[ 1, 2, 3, 2, 3, 2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#取n=3,(2,n)=1,做映射x-&gt;x^3后，应该有元素f1,f1*f2,f1*f2^2</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(D6,x-&gt;x^3);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, &lt;identity&gt; of ..., f1*f2, &lt;identity&gt; of ..., f1*f2^2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#取 n=5,x-&gt;x^n应该是双射</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(D6,x-&gt;x^5);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, f2^2, f1*f2, f2, f1*f2^2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#对于D6，结论似乎是正确的</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">G:= SmallGroup(12,3);</span><br></pre></td></tr></table></figure>
-<pre><code>&lt;group of size 12 with 3 generators&gt;
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StructureDescription(G);</span><br></pre></td></tr></table></figure>
-<pre><code>&quot;A4&quot;
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AsList(G);#12阶群A4</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f1^2, f1*f2, f1*f3, f2*f3, f1^2*f2, f1^2*f3, f1*f2*f3, f1^2*f2*f3 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^13);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f1^2, f1*f2, f1*f3, f2*f3, f1^2*f2, f1^2*f3, f1*f2*f3, f1^2*f2*f3 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^7);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f1^2, f1*f2, f1*f3, f2*f3, f1^2*f2, f1^2*f3, f1*f2*f3, f1^2*f2*f3 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^5);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1^2, f2, f3, f1, f1^2*f2*f3, f1^2*f2, f2*f3, f1*f3, f1*f2*f3, f1^2*f3, f1*f2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^6);# 6|12</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ..., &lt;identity&gt; of ... ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^8); #(8,12)=4</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1^2, &lt;identity&gt; of ..., &lt;identity&gt; of ..., f1, f1^2*f2*f3, f1^2*f2, &lt;identity&gt; of ..., f1*f3, f1*f2*f3, f1^2*f3, f1*f2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List(G,x-&gt;x^11);</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1^2, f2, f3, f1, f1^2*f2*f3, f1^2*f2, f2*f3, f1*f3, f1*f2*f3, f1^2*f3, f1*f2 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">G1:= SmallGroup(60,2);</span><br></pre></td></tr></table></figure>
-<pre><code>&lt;group of size 60 with 4 generators&gt;
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IsAbelian(G1);</span><br></pre></td></tr></table></figure>
-<pre><code>false
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#取 n=7</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s1:=Set(List(G1,x-&gt;x^7));</span><br></pre></td></tr></table></figure>
-<pre><code>[ &lt;identity&gt; of ..., f1, f2, f3, f4, f1*f2, f1*f3, f1*f4, f2^2, f2*f3, f2*f4, f3*f4, f4^2, f1*f2^2, f1*f2*f3, f1*f2*f4, f1*f3*f4, f1*f4^2, f2^2*f3, f2^2*f4, f2*f3*f4, f2*f4^2, f3*f4^2, f4^3, f1*f2^2*f3, f1*f2^2*f4, f1*f2*f3*f4, f1*f2*f4^2, f1*f3*f4^2, f1*f4^3, f2^2*f3*f4, f2^2*f4^2, f2*f3*f4^2, f2*f4^3, f3*f4^3, f4^4, f1*f2^2*f3*f4, f1*f2^2*f4^2, f1*f2*f3*f4^2, f1*f2*f4^3, f1*f3*f4^3, f1*f4^4, f2^2*f3*f4^2, f2^2*f4^3, f2*f3*f4^3, f2*f4^4, f3*f4^4, f1*f2^2*f3*f4^2, f1*f2^2*f4^3, f1*f2*f3*f4^3, f1*f2*f4^4, f1*f3*f4^4, f2^2*f3*f4^3, f2^2*f4^4, f2*f3*f4^4, f1*f2^2*f3*f4^3, f1*f2^2*f4^4, f1*f2*f3*f4^4, f2^2*f3*f4^4, f1*f2^2*f3*f4^4 ]
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s2:=Set(G1);;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s1=s2;</span><br></pre></td></tr></table></figure>
-<pre><code>true
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a5:=AsList(G1)[5];</span><br></pre></td></tr></table></figure>
-<pre><code>&lt;object&gt;
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Order(a5);</span><br></pre></td></tr></table></figure>
-<pre><code>5
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># 取n=6,一定存在元素，它的n次幂等于a5</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a5 in List(G1,x-&gt;x^6);</span><br></pre></td></tr></table></figure>
-<pre><code>true
-</code></pre><figure class="highlight plain"><figcaption><span>4</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>又稍微思考了以下，发现只需考虑循环群就足够了。</p>
-<p>对于猜想2，证明如下:</p>
-<p>设$|a|=m$,$\langle a\rangle$是$m$阶循环群，$(m,n)=1$,则因$\langle a\rangle$是交换群，故$x\mapsto x^n$是$\langle a\rangle$的同构，所以存在$b\in \langle a\rangle\subseteq G$,使得$b^n=a$</p>
-<p>对于猜想1，利用猜想2可证明。</p>
-<p>$(|G|,n)=1$,所以$n$与所以$G$中元素的阶互质，所以对于任意$a\in G$,存在$b \in G$,使得$b^n=a$,所以映射$x\mapsto x^n$是$G$到$G$的满射，又因为$|G|$有限，所以这个映射是双射。</p>
+        <h1 id="Group-Action-in-GAP"><a href="#Group-Action-in-GAP" class="headerlink" title="Group Action in GAP"></a>Group Action in GAP</h1><h2 id="Group-Action"><a href="#Group-Action" class="headerlink" title="Group Action"></a>Group Action</h2><p>GAP 中的群作用是右作用。</p>
+<p>设$\mu: \Omega\times G\longrightarrow\Omega$ 是$G$在集合$\Omega$上的作用，<br>则$\mu$满足$\mu(x,gh)=\mu(\mu(x,g),h)$</p>
+<h2 id="Basic-Action"><a href="#Basic-Action" class="headerlink" title="Basic Action"></a>Basic Action</h2><p>在GAP中，群作用$\mu$可以通过定义函数u(omega,g)来构造，GAP本身已经提供了非常多的作用。</p>
+<p><code>OnPoints(pnt, g)</code> 定义为  pnt^g，例如，pnt是子群，则它是子群的共轭作用</p>
+<p><code>OnRight(pnt, g)</code> pnt*g,  例如，pnt是子群，则该作用就是子群上的置换表示</p>
+<p><code>OnSets(set, g)</code> 群元素g在集合set上的作用是对set的每个元素做^运算</p>
+<p><code>OnTuples(tup, g)</code> g在有序元组tup上的作用是对tup的每个元素做^</p>
+<p><code>OnPairs</code> 在有序对上的^作用</p>
+<p><code>Permuted(list, perm)</code> 对list按照置换perm进行重排</p>
+<h2 id><a href="#" class="headerlink" title=" "></a> </h2><p><code>Orbit(g,pnt,[act])</code> 返回pnt的轨道,默认act是OnPoints</p>
+<p><code>Stabilizer(G[, Omega], pnt[, gens, acts][, act])</code> 计算pnt的稳定子群</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gap&gt; Stabilizer(g,[1,2],OnSets);</span><br><span class="line">Group([ (1,2)(3,4) ])</span><br><span class="line">gap&gt; Stabilizer(g,[1,2],OnTuples);</span><br><span class="line">Group(())</span><br><span class="line">gap&gt; OrbitStabilizer(g,[1,2],OnSets);</span><br><span class="line">rec(</span><br><span class="line">orbit := [ [ 1, 2 ], [ 1, 3 ], [ 1, 4 ], [ 2, 3 ], [ 3, 4 ],</span><br><span class="line">[ 2, 4 ] ], stabilizer := Group([ (1,2)(3,4) ]) )</span><br></pre></td></tr></table></figure>
+<p><code>RepresentativeAction(G[, Omega], d, e[, act])</code> 计算使$d^g=e$的一个g代表元<br><code>ActionHomomorphism(G, Omega[, act][, &quot;surjective&quot;])</code> 返回act对应的置换表示，设$\phi$是G到Omega对称群的群同态，$n=|\Omega|$，它返回与$\phi$置换等价的群同态<br>$\psi:G\rightarrow {1,2,\cdots,n}$<br>若指定surjective,则它用$\psi(G)$作为目标域。</p>
+<p><code>FactorCosetAction(G, U)</code> 返回G在$U$上的置换表示，更准确地说，返回一个与G在$U$上的置换表示置换等价的满同态$\psi:G\rightarrow P$，$P$是${1,2,\cdots,n}$上的置换群</p>
+<p><code>RightCoset(U, g)</code> 可以写为 U*g<br><code>RightCosets(G,U)</code> 返回U的所有右陪集</p>
+<p><code>RightTransversal(G, U)</code> 返回一列右陪集分解的代表元</p>
+<p><code>CosetDecomposition(G, S)</code>  右陪集分解</p>
+<p><code>IsTransitive(G, Omega[, gens, acts][, act])</code>检测一个作用是否传递</p>
+<p><code>IsTransitive(G)</code> 检测一个置换群是否传递</p>
+<p>Stabilizer Chains  </p>
 
       
     </div>
@@ -573,9 +522,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/GPA/" rel="tag"># GPA</a>
+            <a href="/tags/GAP/" rel="tag"># GAP</a>
           
-            <a href="/tags/有限群/" rel="tag"># 有限群</a>
+            <a href="/tags/群作用/" rel="tag"># 群作用</a>
           
         </div>
       
@@ -588,8 +537,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/02/Basic of Group Theory/" rel="next" title="Basic of Group Theory">
-                <i class="fa fa-chevron-left"></i> Basic of Group Theory
+              <a href="/2019/11/03/On the Order Of Elements of  Group/" rel="next" title="On the Order Of Elements of  Group">
+                <i class="fa fa-chevron-left"></i> On the Order Of Elements of  Group
               </a>
             
           </div>
@@ -597,10 +546,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/11/06/Group Action in Gap/" rel="prev" title="Group Action in Gap">
-                Group Action in Gap <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -778,7 +723,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于群元素的阶的猜想"><span class="nav-number">1.</span> <span class="nav-text">关于群元素的阶的猜想</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#猜想1"><span class="nav-number">1.0.1.</span> <span class="nav-text">猜想1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#猜想2"><span class="nav-number">1.0.2.</span> <span class="nav-text">猜想2</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Group-Action-in-GAP"><span class="nav-number">1.</span> <span class="nav-text">Group Action in GAP</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Group-Action"><span class="nav-number">1.1.</span> <span class="nav-text">Group Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Action"><span class="nav-number">1.2.</span> <span class="nav-text">Basic Action</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.3.</span> <span class="nav-text"> </span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -964,9 +909,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/";
-    this.page.identifier = "2019/11/03/On the Order Of Elements of  Group/";
-    this.page.title = 'On the Order Of Elements of  Group';
+    this.page.url = "http://106.14.2.132/2019/11/06/Group Action in Gap/";
+    this.page.identifier = "2019/11/06/Group Action in Gap/";
+    this.page.title = 'Group Action in Gap';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');

@@ -341,6 +341,213 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://106.14.2.132/2019/11/06/Group Action in Gap/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sinren">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sinren">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/11/06/Group Action in Gap/" class="post-title-link" itemprop="url">Group Action in Gap</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-11-06 00:47:27 / 修改时间：00:50:11" itemprop="dateCreated datePublished" datetime="2019-11-06T00:47:27+08:00">2019-11-06</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/GAP/" itemprop="url" rel="index"><span itemprop="name">GAP</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/抽象代数/" itemprop="url" rel="index"><span itemprop="name">抽象代数</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/抽象代数/群论/" itemprop="url" rel="index"><span itemprop="name">群论</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/11/06/Group Action in Gap/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/06/Group Action in Gap/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Group-Action-in-GAP"><a href="#Group-Action-in-GAP" class="headerlink" title="Group Action in GAP"></a>Group Action in GAP</h1><h2 id="Group-Action"><a href="#Group-Action" class="headerlink" title="Group Action"></a>Group Action</h2><p>GAP 中的群作用是右作用。</p>
+<p>设$\mu: \Omega\times G\longrightarrow\Omega$ 是$G$在集合$\Omega$上的作用，<br>则$\mu$满足$\mu(x,gh)=\mu(\mu(x,g),h)$</p>
+<h2 id="Basic-Action"><a href="#Basic-Action" class="headerlink" title="Basic Action"></a>Basic Action</h2><p>在GAP中，群作用$\mu$可以通过定义函数u(omega,g)来构造，GAP本身已经提供了非常多的作用。</p>
+<p><code>OnPoints(pnt, g)</code> 定义为  pnt^g，例如，pnt是子群，则它是子群的共轭作用</p>
+<p><code>OnRight(pnt, g)</code> pnt*g,  例如，pnt是子群，则该作用就是子群上的置换表示</p>
+<p><code>OnSets(set, g)</code> 群元素g在集合set上的作用是对set的每个元素做^运算</p>
+<p><code>OnTuples(tup, g)</code> g在有序元组tup上的作用是对tup的每个元素做^</p>
+<p><code>OnPairs</code> 在有序对上的^作用</p>
+<p><code>Permuted(list, perm)</code> 对list按照置换perm进行重排</p>
+<h2 id><a href="#" class="headerlink" title=" "></a> </h2><p><code>Orbit(g,pnt,[act])</code> 返回pnt的轨道,默认act是OnPoints</p>
+<p><code>Stabilizer(G[, Omega], pnt[, gens, acts][, act])</code> 计算pnt的稳定子群</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gap&gt; Stabilizer(g,[1,2],OnSets);</span><br><span class="line">Group([ (1,2)(3,4) ])</span><br><span class="line">gap&gt; Stabilizer(g,[1,2],OnTuples);</span><br><span class="line">Group(())</span><br><span class="line">gap&gt; OrbitStabilizer(g,[1,2],OnSets);</span><br><span class="line">rec(</span><br><span class="line">orbit := [ [ 1, 2 ], [ 1, 3 ], [ 1, 4 ], [ 2, 3 ], [ 3, 4 ],</span><br><span class="line">[ 2, 4 ] ], stabilizer := Group([ (1,2)(3,4) ]) )</span><br></pre></td></tr></table></figure>
+<p><code>RepresentativeAction(G[, Omega], d, e[, act])</code> 计算使$d^g=e$的一个g代表元<br><code>ActionHomomorphism(G, Omega[, act][, &quot;surjective&quot;])</code> 返回act对应的置换表示，设$\phi$是G到Omega对称群的群同态，$n=|\Omega|$，它返回与$\phi$置换等价的群同态<br>$\psi:G\rightarrow {1,2,\cdots,n}$<br>若指定surjective,则它用$\psi(G)$作为目标域。</p>
+<p><code>FactorCosetAction(G, U)</code> 返回G在$U$上的置换表示，更准确地说，返回一个与G在$U$上的置换表示置换等价的满同态$\psi:G\rightarrow P$，$P$是${1,2,\cdots,n}$上的置换群</p>
+<p><code>RightCoset(U, g)</code> 可以写为 U*g<br><code>RightCosets(G,U)</code> 返回U的所有右陪集</p>
+<p><code>RightTransversal(G, U)</code> 返回一列右陪集分解的代表元</p>
+<p><code>CosetDecomposition(G, S)</code>  右陪集分解</p>
+<p><code>IsTransitive(G, Omega[, gens, acts][, act])</code>检测一个作用是否传递</p>
+<p><code>IsTransitive(G)</code> 检测一个置换群是否传递</p>
+<p>Stabilizer Chains  </p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://106.14.2.132/2019/11/03/On the Order Of Elements of  Group/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -386,12 +593,24 @@
                 
               
 
-              <time title="创建时间：2019-11-03 00:00:00 / 修改时间：22:58:18" itemprop="dateCreated datePublished" datetime="2019-11-03T00:00:00+08:00">2019-11-03</time>
+              <time title="创建时间：2019-11-03 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-03T00:00:00+08:00">2019-11-03</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-11-04 20:49:46" itemprop="dateModified" datetime="2019-11-04T20:49:46+08:00">2019-11-04</time>
               
             
           </span>
@@ -575,12 +794,24 @@
                 
               
 
-              <time title="创建时间：2019-11-02 00:00:00 / 修改时间：17:10:54" itemprop="dateCreated datePublished" datetime="2019-11-02T00:00:00+08:00">2019-11-02</time>
+              <time title="创建时间：2019-11-02 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-02T00:00:00+08:00">2019-11-02</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-11-04 20:56:33" itemprop="dateModified" datetime="2019-11-04T20:56:33+08:00">2019-11-04</time>
               
             
           </span>
@@ -933,7 +1164,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -964,7 +1195,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -989,7 +1222,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1212,6 +1451,8 @@
     
       
         
+      
+    
       
     
       
